@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KuzCode.NaurokApiClient", "KuzCode.NaurokApiClient\KuzCode.NaurokApiClient.csproj", "{E84C4499-6F49-4C55-8717-CAA2A3FE221C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTests", "ConsoleTests\ConsoleTests.csproj", "{C0DD4A40-B486-4FF7-8B1B-8F7B5A0DC7AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E84C4499-6F49-4C55-8717-CAA2A3FE221C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84C4499-6F49-4C55-8717-CAA2A3FE221C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84C4499-6F49-4C55-8717-CAA2A3FE221C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84C4499-6F49-4C55-8717-CAA2A3FE221C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DD4A40-B486-4FF7-8B1B-8F7B5A0DC7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DD4A40-B486-4FF7-8B1B-8F7B5A0DC7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DD4A40-B486-4FF7-8B1B-8F7B5A0DC7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DD4A40-B486-4FF7-8B1B-8F7B5A0DC7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2BEEE3B-356C-4B5E-BDAC-7B418DF01B96}
+	EndGlobalSection
+EndGlobal

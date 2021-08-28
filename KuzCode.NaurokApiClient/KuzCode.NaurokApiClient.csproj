@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>74727882-7394-45d0-a16f-49fb94c4bdb3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="H.Socket.IO" Version="1.2.1" />
+    <PackageReference Include="MAD.JsonConverters.NestedJsonConverter" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="SocketIOClient" Version="2.3.1" />
+    <PackageReference Include="SocketIOClient.Newtonsoft.Json" Version="2.3.1" />
+  </ItemGroup>
+
+</Project>
