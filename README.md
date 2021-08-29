@@ -41,12 +41,12 @@
 
 ## Примечания
 В проекте используеться *user-secrets*. Файл *secret.json* имеет следующий вид:
-```
+```json
 {
-  "teacherPhpSessionId": "...",
-  "sessionId": ...,
-  "documentId": ...,
-  "userAgent": "..."
+  "teacherPhpSessionId": "PHPSESSID учителя...",
+  "sessionId": 0,
+  "documentId": 0,
+  "userAgent": "Заголовок User-Agent..."
 }
 ```
 
