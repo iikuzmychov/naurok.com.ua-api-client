@@ -146,6 +146,9 @@ namespace KuzCode.NaurokApiClient.RealTime
         /// <param name="homeworkId">Идентификатор домашнего задания</param>
         /// <param name="sessionId">Идентификатор сессии</param>
         /// <param name="name">Имя</param>
+        /// <exception cref="AggregateException"/>
+        /// <exception cref="ArgumentNullException"/>
+        /// <exception cref="ArgumentOutOfRangeException"/>
         public async Task ConnectAsStudentAsync(long homeworkId, long sessionId, string name)
         {
             if (homeworkId < 0)
@@ -175,6 +178,8 @@ namespace KuzCode.NaurokApiClient.RealTime
         /// Подключиться к веб-сокет серверу как учитель
         /// </summary>
         /// <param name="homeworkId">Идентификатор домашнего задания</param>
+        /// <exception cref="AggregateException"/>
+        /// <exception cref="ArgumentOutOfRangeException"/>
         public async Task ConnectAsTeacherAsync(int homeworkId)
         {
             if (homeworkId < 0)
@@ -196,6 +201,8 @@ namespace KuzCode.NaurokApiClient.RealTime
         /// Исключить пользователя
         /// </summary>
         /// <param name="userClientId">Идентификатор клиента пользователя, которого необходимо удалить</param>
+        /// <exception cref="AggregateException"/>
+        /// <exception cref="ArgumentNullException"/>
         public async Task RemoveUserAsync(string userClientId)
         {
             if (userClientId is null)
@@ -216,6 +223,7 @@ namespace KuzCode.NaurokApiClient.RealTime
         /// <summary>
         /// Начать тестирование
         /// </summary>
+        /// <exception cref="AggregateException"/>
         public async Task StartTestingAsync()
         {
             if (!IsConnected)
@@ -229,6 +237,7 @@ namespace KuzCode.NaurokApiClient.RealTime
         /// Прекратить тестирование
         /// </summary>
         /// <remarks>Отличие от метода <see cref="CancelTestingAsync"/> в том, что он отменяет уже начатое тестирование, а данный метод прекращает не начатое</remarks>
+        /// <exception cref="AggregateException"/>
         public async Task StopTestingAsync()
         {
             if (!IsConnected)
@@ -242,6 +251,7 @@ namespace KuzCode.NaurokApiClient.RealTime
         /// Отменить тестирование
         /// </summary>
         /// <remarks>Отличие от метода <see cref="StopTestingAsync"/> в том, что он прекращает уже начатое тестирование, а данный метод отменяет не начатое</remarks>
+        /// <exception cref="AggregateException"/>
         public async Task CancelTestingAsync()
         {
             if (!IsConnected)
@@ -251,6 +261,10 @@ namespace KuzCode.NaurokApiClient.RealTime
             await _socketIoClient.Emit("cancel", data);
         }
 
+        /// <summary>
+        /// Запросить информацию о сессиях
+        /// </summary>
+        /// <exception cref="AggregateException"/>
         public async Task RequestSessionsInfoAsync()
         {
             if (!IsConnected)
@@ -260,6 +274,9 @@ namespace KuzCode.NaurokApiClient.RealTime
             await _socketIoClient.Emit("scoreboard", data);
         }
 
+        /// <summary>
+        /// Отключиться от веб-сокет сервера
+        /// </summary>
         public async Task DisconnectAsync()
         {
             if (IsConnected)
