@@ -40,7 +40,7 @@ namespace KuzCode.NaurokApiClient
         /// <exception cref="ArgumentNullException"/>
         public NaurokTeacher(string phpSessionId) : this(phpSessionId, new HttpClientHandler()) { }
 
-        protected static HttpClientHandler InitializeHttpClientHandler(HttpClientHandler handler, string phpSessionId)
+        private static HttpClientHandler InitializeHttpClientHandler(HttpClientHandler handler, string phpSessionId)
         {
             if (handler.CookieContainer is null)
                 handler.CookieContainer = new CookieContainer();
