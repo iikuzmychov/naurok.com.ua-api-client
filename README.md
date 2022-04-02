@@ -1,4 +1,4 @@
-# KuzCode.NaurokApiClient
+# NaurokApiClient
 
 ## Что такое NaurokApiClient?
 В Украине существует популярный сайт https://naurok.com.ua, предназначенный для тестирования учеников. У него есть непубличное недокументированное API.
