@@ -1,5 +1,7 @@
 # NaurokApiClient
 
+[EN](README_en.md) | [RU](README.md)
+
 ## What is NaurokApiClient?
 In Ukraine, there is a popular site https://naurok.com.ua, designed for testing students. It has a non-public, undocumented API.
 This class library is an API client for the site and allows you to interact with most of its functions.
