@@ -1,6 +1,6 @@
-# NaurokApiClient
-
 [EN](README_en.md) | [RU](README.md)
+
+# NaurokApiClient
 
 ## What is NaurokApiClient?
 In Ukraine, there is a popular site https://naurok.com.ua, designed for testing students. It has a non-public, undocumented API.
