@@ -1,4 +1,4 @@
-[EN](README_en.md) | [RU](README.md)
+[EN](README_en.md) | RU
 
 # NaurokApiClient
 
