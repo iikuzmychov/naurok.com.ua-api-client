@@ -42,7 +42,7 @@ A fully working *RealTime* client has also been implemented to interact with rea
 * Creation of a full-fledged client - a mobile application
 
 ## Documentation
-The documentation is implemented in the code via *summary* (completely), as well as in the repository [here] (https://github.com/IhorKuzmichov/KuzCode.NaurokApiClient/wiki) (not completely).
+The documentation is implemented in the code via *summary* (completely), as well as in the repository [here](https://github.com/IhorKuzmichov/KuzCode.NaurokApiClient/wiki) (not completely).
 
 ## Notes
 The project uses *user-secrets*. The *secret.json* file looks like this:
