@@ -279,7 +279,7 @@ namespace KuzCode.NaurokApiClient.RealTime
         /// </summary>
         public async Task DisconnectAsync()
         {
-            if (IsConnected)
+            if (!IsConnected)
                 return;
             
             await _socketIoClient.DisconnectAsync();
